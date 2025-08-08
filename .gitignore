@@ -1,0 +1,20 @@
+# OS-specific files
+**/.DS_Store
+
+# Xcode
+build/
+*.pbxuser
+xcuserdata
+profile
+DerivedData
+**/*.swift.plist
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
