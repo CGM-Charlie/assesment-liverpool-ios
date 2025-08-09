@@ -6,6 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F2FB0B752E46BA71004E0381 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F2FB0B742E46BA71004E0381 /* Alamofire */; };
+		F2FB0B962E46C1BF004E0381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FB0B8F2E46C1BF004E0381 /* Assets.xcassets */; };
+		F2FB0B982E46C1BF004E0381 /* GetProductsCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0B852E46C1BF004E0381 /* GetProductsCall.swift */; };
+		F2FB0B992E46C1BF004E0381 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0B872E46C1BF004E0381 /* NetworkCall.swift */; };
+		F2FB0B9A2E46C1BF004E0381 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0B882E46C1BF004E0381 /* NetworkClient.swift */; };
+		F2FB0B9B2E46C1BF004E0381 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0B892E46C1BF004E0381 /* NetworkError.swift */; };
+		F2FB0B9F2E46C1BF004E0381 /* LiverpoolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0B912E46C1BF004E0381 /* LiverpoolApp.swift */; };
+		F2FB0BA32E46C1C9004E0381 /* assesment_liverpoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BA12E46C1C9004E0381 /* assesment_liverpoolTests.swift */; };
+		F2FB0BA72E46C1CC004E0381 /* assesment_liverpoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BA42E46C1CC004E0381 /* assesment_liverpoolUITests.swift */; };
+		F2FB0BA82E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BA52E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift */; };
+		F2FB0BAB2E46C29F004E0381 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FB0BA92E46C29F004E0381 /* Preview Assets.xcassets */; };
+		F2FB0BAD2E46C3AF004E0381 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BAC2E46C3AF004E0381 /* RootView.swift */; };
+		F2FB0BB02E46C536004E0381 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BAF2E46C536004E0381 /* ProductsView.swift */; };
+		F2FB0BB22E46C57C004E0381 /* ProductsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BB12E46C57C004E0381 /* ProductsDetailView.swift */; };
+		F2FB0BB72E46DFD3004E0381 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BB62E46DFD3004E0381 /* ProductsViewModel.swift */; };
+		F2FB0BBA2E46EA14004E0381 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F2FB0BB92E46EA14004E0381 /* SDWebImageSwiftUI */; };
+		F2FB0BBD2E46EC38004E0381 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BBC2E46EC38004E0381 /* Double.swift */; };
+		F2FB0BBF2E46FC0D004E0381 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BBE2E46FC0D004E0381 /* Color.swift */; };
+		F2FB0BC12E46FF27004E0381 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BC02E46FF27004E0381 /* Array.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F2FB0B572E46B498004E0381 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,31 +49,32 @@
 		F2FB0B412E46B496004E0381 /* assesment-liverpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "assesment-liverpool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FB0B562E46B498004E0381 /* assesment-liverpoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "assesment-liverpoolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FB0B602E46B498004E0381 /* assesment-liverpoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "assesment-liverpoolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2FB0B852E46C1BF004E0381 /* GetProductsCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsCall.swift; sourceTree = "<group>"; };
+		F2FB0B872E46C1BF004E0381 /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
+		F2FB0B882E46C1BF004E0381 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		F2FB0B892E46C1BF004E0381 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F2FB0B8F2E46C1BF004E0381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2FB0B912E46C1BF004E0381 /* LiverpoolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolApp.swift; sourceTree = "<group>"; };
+		F2FB0BA12E46C1C9004E0381 /* assesment_liverpoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assesment_liverpoolTests.swift; sourceTree = "<group>"; };
+		F2FB0BA42E46C1CC004E0381 /* assesment_liverpoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assesment_liverpoolUITests.swift; sourceTree = "<group>"; };
+		F2FB0BA52E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assesment_liverpoolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2FB0BA92E46C29F004E0381 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2FB0BAC2E46C3AF004E0381 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F2FB0BAF2E46C536004E0381 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		F2FB0BB12E46C57C004E0381 /* ProductsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDetailView.swift; sourceTree = "<group>"; };
+		F2FB0BB62E46DFD3004E0381 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		F2FB0BBC2E46EC38004E0381 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		F2FB0BBE2E46FC0D004E0381 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F2FB0BC02E46FF27004E0381 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F2FB0B432E46B496004E0381 /* assesment-liverpool */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "assesment-liverpool";
-			sourceTree = "<group>";
-		};
-		F2FB0B592E46B498004E0381 /* assesment-liverpoolTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "assesment-liverpoolTests";
-			sourceTree = "<group>";
-		};
-		F2FB0B632E46B498004E0381 /* assesment-liverpoolUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "assesment-liverpoolUITests";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F2FB0B3E2E46B496004E0381 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FB0BBA2E46EA14004E0381 /* SDWebImageSwiftUI in Frameworks */,
+				F2FB0B752E46BA71004E0381 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +98,9 @@
 		F2FB0B382E46B496004E0381 = {
 			isa = PBXGroup;
 			children = (
-				F2FB0B432E46B496004E0381 /* assesment-liverpool */,
-				F2FB0B592E46B498004E0381 /* assesment-liverpoolTests */,
-				F2FB0B632E46B498004E0381 /* assesment-liverpoolUITests */,
+				F2FB0B932E46C1BF004E0381 /* assesment-liverpool */,
+				F2FB0BA22E46C1C9004E0381 /* assesment-liverpoolTests */,
+				F2FB0BA62E46C1CC004E0381 /* assesment-liverpoolUITests */,
 				F2FB0B422E46B496004E0381 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +113,84 @@
 				F2FB0B602E46B498004E0381 /* assesment-liverpoolUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F2FB0B862E46C1BF004E0381 /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB0B852E46C1BF004E0381 /* GetProductsCall.swift */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		F2FB0B8A2E46C1BF004E0381 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB0B862E46C1BF004E0381 /* Calls */,
+				F2FB0B872E46C1BF004E0381 /* NetworkCall.swift */,
+				F2FB0B882E46C1BF004E0381 /* NetworkClient.swift */,
+				F2FB0B892E46C1BF004E0381 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F2FB0B932E46C1BF004E0381 /* assesment-liverpool */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB0BBB2E46EC30004E0381 /* Extensions */,
+				F2FB0B8F2E46C1BF004E0381 /* Assets.xcassets */,
+				F2FB0BAA2E46C29F004E0381 /* Preview Content */,
+				F2FB0B8A2E46C1BF004E0381 /* Network */,
+				F2FB0BAE2E46C529004E0381 /* Screens */,
+				F2FB0B912E46C1BF004E0381 /* LiverpoolApp.swift */,
+				F2FB0BAC2E46C3AF004E0381 /* RootView.swift */,
+			);
+			path = "assesment-liverpool";
+			sourceTree = "<group>";
+		};
+		F2FB0BA22E46C1C9004E0381 /* assesment-liverpoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB0BA12E46C1C9004E0381 /* assesment_liverpoolTests.swift */,
+			);
+			path = "assesment-liverpoolTests";
+			sourceTree = "<group>";
+		};
+		F2FB0BA62E46C1CC004E0381 /* assesment-liverpoolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB0BA42E46C1CC004E0381 /* assesment_liverpoolUITests.swift */,
+				F2FB0BA52E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift */,
+			);
+			path = "assesment-liverpoolUITests";
+			sourceTree = "<group>";
+		};
+		F2FB0BAA2E46C29F004E0381 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB0BA92E46C29F004E0381 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2FB0BAE2E46C529004E0381 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB0BAF2E46C536004E0381 /* ProductsView.swift */,
+				F2FB0BB12E46C57C004E0381 /* ProductsDetailView.swift */,
+				F2FB0BB62E46DFD3004E0381 /* ProductsViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F2FB0BBB2E46EC30004E0381 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB0BBC2E46EC38004E0381 /* Double.swift */,
+				F2FB0BBE2E46FC0D004E0381 /* Color.swift */,
+				F2FB0BC02E46FF27004E0381 /* Array.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,11 +208,10 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F2FB0B432E46B496004E0381 /* assesment-liverpool */,
-			);
 			name = "assesment-liverpool";
 			packageProductDependencies = (
+				F2FB0B742E46BA71004E0381 /* Alamofire */,
+				F2FB0BB92E46EA14004E0381 /* SDWebImageSwiftUI */,
 			);
 			productName = "assesment-liverpool";
 			productReference = F2FB0B412E46B496004E0381 /* assesment-liverpool.app */;
@@ -129,9 +229,6 @@
 			);
 			dependencies = (
 				F2FB0B582E46B498004E0381 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F2FB0B592E46B498004E0381 /* assesment-liverpoolTests */,
 			);
 			name = "assesment-liverpoolTests";
 			packageProductDependencies = (
@@ -152,9 +249,6 @@
 			);
 			dependencies = (
 				F2FB0B622E46B498004E0381 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F2FB0B632E46B498004E0381 /* assesment-liverpoolUITests */,
 			);
 			name = "assesment-liverpoolUITests";
 			packageProductDependencies = (
@@ -195,6 +289,10 @@
 			);
 			mainGroup = F2FB0B382E46B496004E0381;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F2FB0B732E46BA71004E0381 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F2FB0BB82E46EA14004E0381 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F2FB0B422E46B496004E0381 /* Products */;
 			projectDirPath = "";
@@ -212,6 +310,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FB0BAB2E46C29F004E0381 /* Preview Assets.xcassets in Resources */,
+				F2FB0B962E46C1BF004E0381 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FB0B982E46C1BF004E0381 /* GetProductsCall.swift in Sources */,
+				F2FB0B992E46C1BF004E0381 /* NetworkCall.swift in Sources */,
+				F2FB0BBF2E46FC0D004E0381 /* Color.swift in Sources */,
+				F2FB0BB72E46DFD3004E0381 /* ProductsViewModel.swift in Sources */,
+				F2FB0BB22E46C57C004E0381 /* ProductsDetailView.swift in Sources */,
+				F2FB0B9A2E46C1BF004E0381 /* NetworkClient.swift in Sources */,
+				F2FB0B9B2E46C1BF004E0381 /* NetworkError.swift in Sources */,
+				F2FB0B9F2E46C1BF004E0381 /* LiverpoolApp.swift in Sources */,
+				F2FB0BB02E46C536004E0381 /* ProductsView.swift in Sources */,
+				F2FB0BC12E46FF27004E0381 /* Array.swift in Sources */,
+				F2FB0BBD2E46EC38004E0381 /* Double.swift in Sources */,
+				F2FB0BAD2E46C3AF004E0381 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FB0BA32E46C1C9004E0381 /* assesment_liverpoolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FB0BA72E46C1CC004E0381 /* assesment_liverpoolUITests.swift in Sources */,
+				F2FB0BA82E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +683,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2FB0B732E46BA71004E0381 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		F2FB0BB82E46EA14004E0381 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2FB0B742E46BA71004E0381 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2FB0B732E46BA71004E0381 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F2FB0BB92E46EA14004E0381 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2FB0BB82E46EA14004E0381 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2FB0B392E46B496004E0381 /* Project object */;
 }
