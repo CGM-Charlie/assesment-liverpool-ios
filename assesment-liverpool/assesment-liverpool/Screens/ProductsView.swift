@@ -88,6 +88,7 @@ struct ProductCard: View {
                         .frame(width: 128, height: 128)
                 }
             )
+            .cancelOnDisappear(true)
             .onDisappear {
                 SDImageCache.shared.removeImage(forKey: product.imageUrl, fromDisk: false)
             }
