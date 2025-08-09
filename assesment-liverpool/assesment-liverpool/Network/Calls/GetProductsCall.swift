@@ -4,6 +4,7 @@ import Foundation
 struct GetProductsParams: Codable {
     let searchTerm: String?
     let sortOption: String?
+    let pageNumber: Int32
 }
 
 struct GetProductsResponse: Codable {
@@ -24,11 +25,11 @@ struct PlpResults: Codable {
 struct Record: Codable {
     let productId: String
     let productDisplayName: String
-    let brand: String
+    let brand: String?
     let listPrice: Double
     let promoPrice: Double
     let lgImage: String?
-    let variantsColor: [VariantColor]
+    let variantsColor: [VariantColor]?
 }
 
 struct VariantColor: Codable {
@@ -44,6 +45,6 @@ final class GetProductsCall: NetworkCall {
     let body: NoBody = .init()
 
     init(params: GetProductsParams) {
-        self.path = "/appclienteservices/services/v8/plp/sf?page-number=1&search-string=\(params.searchTerm ?? "")&sort-option=\(params.sortOption ?? "predefined")&force-plp=false&number-of-items-per-page=40&cleanProductName=false"
+        self.path = "/appclienteservices/services/v8/plp/sf?page-number=\(params.pageNumber)&search-string=\(params.searchTerm ?? "")&force-plp=false&number-of-items-per-page=40&cleanProductName=false"
     }
 }
