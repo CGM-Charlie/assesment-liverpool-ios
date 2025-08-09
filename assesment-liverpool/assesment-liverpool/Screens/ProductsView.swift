@@ -22,11 +22,22 @@ struct ProductsView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 128, height: 128)
                             },
-                            placeholder: { Text("No Image") }
+                            placeholder: {
+                                Image("PlaceholderImage")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 128, height: 128)
+                            }
                         )
 
                         VStack(alignment: .leading, spacing: 6) {
+                            Text(product.brand)
+                                .font(.title3)
+                                .bold()
+
                             Text(product.displayName)
+                                .font(.subheadline)
+                                .foregroundStyle(.gray)
 
                             if product.displayListPrice == product.displayPromoPrice {
                                 Text(product.displayPromoPrice)
@@ -34,6 +45,7 @@ struct ProductsView: View {
                             } else {
                                 Text(product.displayListPrice)
                                     .strikethrough()
+                                    .foregroundStyle(.gray)
 
                                 Text(product.displayPromoPrice)
                                     .foregroundStyle(.red)
