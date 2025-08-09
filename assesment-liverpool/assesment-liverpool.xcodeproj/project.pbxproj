@@ -14,9 +14,7 @@
 		F2FB0B9A2E46C1BF004E0381 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0B882E46C1BF004E0381 /* NetworkClient.swift */; };
 		F2FB0B9B2E46C1BF004E0381 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0B892E46C1BF004E0381 /* NetworkError.swift */; };
 		F2FB0B9F2E46C1BF004E0381 /* LiverpoolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0B912E46C1BF004E0381 /* LiverpoolApp.swift */; };
-		F2FB0BA32E46C1C9004E0381 /* assesment_liverpoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BA12E46C1C9004E0381 /* assesment_liverpoolTests.swift */; };
-		F2FB0BA72E46C1CC004E0381 /* assesment_liverpoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BA42E46C1CC004E0381 /* assesment_liverpoolUITests.swift */; };
-		F2FB0BA82E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BA52E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift */; };
+		F2FB0BA32E46C1C9004E0381 /* LiverpoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BA12E46C1C9004E0381 /* LiverpoolTests.swift */; };
 		F2FB0BAB2E46C29F004E0381 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FB0BA92E46C29F004E0381 /* Preview Assets.xcassets */; };
 		F2FB0BAD2E46C3AF004E0381 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BAC2E46C3AF004E0381 /* RootView.swift */; };
 		F2FB0BB02E46C536004E0381 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BAF2E46C536004E0381 /* ProductsView.swift */; };
@@ -26,6 +24,8 @@
 		F2FB0BBD2E46EC38004E0381 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BBC2E46EC38004E0381 /* Double.swift */; };
 		F2FB0BBF2E46FC0D004E0381 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BBE2E46FC0D004E0381 /* Color.swift */; };
 		F2FB0BC12E46FF27004E0381 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BC02E46FF27004E0381 /* Array.swift */; };
+		F2FB0BCC2E4724AA004E0381 /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BCB2E4724AA004E0381 /* MockNetworkClient.swift */; };
+		F2FB0BCE2E4729AF004E0381 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB0BCD2E4729AF004E0381 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +55,7 @@
 		F2FB0B892E46C1BF004E0381 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		F2FB0B8F2E46C1BF004E0381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FB0B912E46C1BF004E0381 /* LiverpoolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolApp.swift; sourceTree = "<group>"; };
-		F2FB0BA12E46C1C9004E0381 /* assesment_liverpoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assesment_liverpoolTests.swift; sourceTree = "<group>"; };
-		F2FB0BA42E46C1CC004E0381 /* assesment_liverpoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assesment_liverpoolUITests.swift; sourceTree = "<group>"; };
-		F2FB0BA52E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assesment_liverpoolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2FB0BA12E46C1C9004E0381 /* LiverpoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolTests.swift; sourceTree = "<group>"; };
 		F2FB0BA92E46C29F004E0381 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2FB0BAC2E46C3AF004E0381 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		F2FB0BAF2E46C536004E0381 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
@@ -66,6 +64,8 @@
 		F2FB0BBC2E46EC38004E0381 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F2FB0BBE2E46FC0D004E0381 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F2FB0BC02E46FF27004E0381 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		F2FB0BCB2E4724AA004E0381 /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		F2FB0BCD2E4729AF004E0381 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,6 @@
 			children = (
 				F2FB0B932E46C1BF004E0381 /* assesment-liverpool */,
 				F2FB0BA22E46C1C9004E0381 /* assesment-liverpoolTests */,
-				F2FB0BA62E46C1CC004E0381 /* assesment-liverpoolUITests */,
 				F2FB0B422E46B496004E0381 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,18 +150,10 @@
 		F2FB0BA22E46C1C9004E0381 /* assesment-liverpoolTests */ = {
 			isa = PBXGroup;
 			children = (
-				F2FB0BA12E46C1C9004E0381 /* assesment_liverpoolTests.swift */,
+				F2FB0BA12E46C1C9004E0381 /* LiverpoolTests.swift */,
+				F2FB0BCB2E4724AA004E0381 /* MockNetworkClient.swift */,
 			);
 			path = "assesment-liverpoolTests";
-			sourceTree = "<group>";
-		};
-		F2FB0BA62E46C1CC004E0381 /* assesment-liverpoolUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F2FB0BA42E46C1CC004E0381 /* assesment_liverpoolUITests.swift */,
-				F2FB0BA52E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift */,
-			);
-			path = "assesment-liverpoolUITests";
 			sourceTree = "<group>";
 		};
 		F2FB0BAA2E46C29F004E0381 /* Preview Content */ = {
@@ -189,6 +180,7 @@
 				F2FB0BBC2E46EC38004E0381 /* Double.swift */,
 				F2FB0BBE2E46FC0D004E0381 /* Color.swift */,
 				F2FB0BC02E46FF27004E0381 /* Array.swift */,
+				F2FB0BCD2E4729AF004E0381 /* Product.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -348,6 +340,7 @@
 				F2FB0BC12E46FF27004E0381 /* Array.swift in Sources */,
 				F2FB0BBD2E46EC38004E0381 /* Double.swift in Sources */,
 				F2FB0BAD2E46C3AF004E0381 /* RootView.swift in Sources */,
+				F2FB0BCE2E4729AF004E0381 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2FB0BA32E46C1C9004E0381 /* assesment_liverpoolTests.swift in Sources */,
+				F2FB0BA32E46C1C9004E0381 /* LiverpoolTests.swift in Sources */,
+				F2FB0BCC2E4724AA004E0381 /* MockNetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,8 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2FB0BA72E46C1CC004E0381 /* assesment_liverpoolUITests.swift in Sources */,
-				F2FB0BA82E46C1CC004E0381 /* assesment_liverpoolUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

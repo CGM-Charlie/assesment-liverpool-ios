@@ -8,17 +8,10 @@ struct GetProductsParams: Codable {
 }
 
 struct GetProductsResponse: Codable {
-    let status: Status
     let plpResults: PlpResults
 }
 
-struct Status: Codable {
-    let status: String
-    let statusCode: Int
-}
-
 struct PlpResults: Codable {
-    let label: String
     let records: [Record]
 }
 

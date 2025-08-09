@@ -24,10 +24,11 @@ class ProductsViewModel: ObservableObject {
     @Published private(set) var searchState: SearchState
     private var pageNumber: Int32 = 1
 
-    private let networkClient = NetworkClient()
+    private let networkClient: Networking
     private var cancellables = Set<AnyCancellable>()
 
-    init() {
+    init(networkClient: Networking) {
+        self.networkClient = networkClient
         self.products = []
         self.searchState = .loading
 
@@ -35,13 +36,13 @@ class ProductsViewModel: ObservableObject {
             .debounce(for: .milliseconds(1000), scheduler: RunLoop.main)
             .removeDuplicates()
             .sink { [weak self] value in
-                guard let self = self else { return }
-
+                guard let self else { return }
                 self.pageNumber = 1
                 self.searchState = .loading
                 self.products = []
 
-                Task {
+                Task { [weak self] in
+                    guard let self else { return }
                     await self.fetchProducts(params: GetProductsParams(
                         searchTerm: value,
                         sortOption: nil,
@@ -59,21 +60,20 @@ class ProductsViewModel: ObservableObject {
     }
 
     func loadNextPage() {
-        self.pageNumber += 1
+        pageNumber += 1
 
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
             await self.fetchProducts(params: GetProductsParams(
                 searchTerm: searchText,
                 sortOption: nil,
-                pageNumber: self.pageNumber
+                pageNumber: pageNumber
             ))
         }
     }
 
     func fetchProducts(params: GetProductsParams) async {
-        let result = await Task.detached { [networkClient] in
-            await networkClient.execute(call: GetProductsCall(params: params))
-        }.value
+        let result = await networkClient.execute(call: GetProductsCall(params: params))
 
         switch result {
             case .success(let response):

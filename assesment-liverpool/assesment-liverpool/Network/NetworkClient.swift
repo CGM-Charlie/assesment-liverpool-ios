@@ -1,13 +1,16 @@
 import Foundation
 import Alamofire
 
+protocol Networking {
+    func execute<Call: NetworkCall>(call: Call) async -> Result<Call.Response?, NetworkError>
+}
+
+extension NetworkClient: Networking {}
+
 final class NetworkClient {
     let apiURL = "https://shoppapp.liverpool.com.mx"
 
-    func execute<Call: NetworkCall>(
-        call: Call,
-        skipMinimumVersion: Bool = false
-    ) async -> Result<Call.Response?, NetworkError> {
+    func execute<Call: NetworkCall>(call: Call) async -> Result<Call.Response?, NetworkError> {
         let url = "\(apiURL)\(call.path)"
         let method = call.method
         let params = call.body
